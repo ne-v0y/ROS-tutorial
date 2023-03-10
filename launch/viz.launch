@@ -1,0 +1,7 @@
+<launch>
+    <node name="tf" pkg="tf" type="static_transform_publisher" args="0 0 0 0 0 0 1 map my_frame_demo 100"/>
+
+    <node name="talker" pkg="beginner_tutorial_demo" type="talker" />
+    <node name="listener" pkg="beginner_tutorial_demo" type="listener" />
+    <node name="viz" pkg="rviz" type="rviz" />
+</launch>
