@@ -31,7 +31,7 @@ $ source devel/setup.bash (source devel/setup.zsh)
 ```
 rosrun tf static_transform_publisher 0 0 0 0 0 0 1 map my_frame 10
 ```
-6. another way to run multiple nodes in one command is using `roslaunch`. I have added an example file, but has a bug in it. Can you figure it out?
+6. another way to run multiple nodes in one command is using `roslaunch`. I have added an example file, but put a bug on purpose. Can you figure it out? 😉
 
 ![outcome](out.png "Outcome")
 
