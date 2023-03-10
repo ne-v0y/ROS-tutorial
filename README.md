@@ -11,7 +11,7 @@ One simple example to learn about ROS1
 - Some of the above option might already contain installation steps for ROS Noetic, but if not, here is the [official installation document](http://wiki.ros.org/noetic/Installation/Ubuntu) 
 
 ## What does this repo do
-### Write a simple publisher and subscriber with custom message type
+### Write a simple publisher and subscriber and visualize the message
 1. create a workspace and its source folder
 ```bash
 $ mkdir -p ~/catkin_ws/src
@@ -27,11 +27,10 @@ $ source devel/setup.bash (source devel/setup.zsh)
 2. go to `ROS-tutorial`, there are a few TODOs in the file, you need to create publisher and subscriber
 3. to check your publisher is working, use command `rostopic list` to check see all live topics
 4. to check your publisher is publishing content, use `rostopic echo` to check published content
-5. to visualize bounding box, ues command `rviz` and in a new terminal run static tf publisher
+5. to visualize bounding box, ues command `rviz` and in a new terminal run static tf publisher. Use `Add` on the left bottom coner to add `by topic` and choose `Marker`, you should be able to see the following outcome
 ```
 rosrun tf static_transform_publisher 0 0 0 0 0 0 1 map my_frame 10
 ```
-and use `Add` on the left bottom coner to add `by topic` and choose `Marker`, you should be able to see the following outcome
 6. another way to run multiple nodes in one command is using `roslaunch`. I have added an example file, but has a bug in it. Can you figure it out?
 
 ![outcome](out.png "Outcome")
