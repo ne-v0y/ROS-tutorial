@@ -25,5 +25,5 @@ $ source devel/setup.bash (source devel/setup.zsh)
 ```
 2. creating a package in the `~/catkin_ws/src` folder
 ```bash
-catkin_create_pkg beginner_tutorial std_msgs roscpp rospy
+catkin_create_pkg beginner_tutorial std_msgs roscpp rospy visualization_msgs
 ```
