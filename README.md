@@ -32,9 +32,9 @@ $ source devel/setup.bash (source devel/setup.zsh)
 rosrun tf static_transform_publisher 0 0 0 0 0 0 1 map my_frame 10
 ```
 and use `Add` on the left bottom coner to add `by topic` and choose `Marker`, you should be able to see the following outcome
-![outcome](out.png "Outcome")
 6. another way to run multiple nodes in one command is using `roslaunch`. I have added an example file, but has a bug in it. Can you figure it out?
 
+![outcome](out.png "Outcome")
 
 ## Useful links
 https://mirror.umd.edu/roswiki/attachments/de/ROScheatsheet.pdf
